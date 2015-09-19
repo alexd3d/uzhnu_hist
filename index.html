@@ -29,15 +29,184 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/css/swiper.min.css">
+    <link title="timeline-styles" rel="stylesheet" href="//cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
 
     <!-- FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- JS -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>-->
+    <script src="//cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.jquery.min.js"></script>
+
 
 
 
 </head>
 <body>
-<h1>My header</h1>
- <p>This is jyst a testr</p>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Parallax background element -->
+        <div
+                class="parallax-bg"
+                id="bg1"
+                style="background-image:url(images/photos/uzhnu_old_1.jpg);display: none;"
+                data-swiper-parallax="-33%">
+        </div>
+        <div
+                class="parallax-bg"
+                id="bg2"
+                style="background-image:url(images/photos/korpus_new.jpg);display: none;"
+                data-swiper-parallax="-33%">
+        </div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" data-hash="slide1" data-swiper-parallax="-100">
+                <div class="gradient"></div>
+                <div class="slide_content">
+                    <img src="images/favicon/apple-touch-icon-114x114.png" class="u-pull-left" style="padding-right: 1rem">
+                    <h1>Вітаємо на інтерактивних сторінках історії <div class="subheading">Ужгородського національного університету!</div></h1>
+                    <img class='framed u-pull-right' src="images/photos/uzhnu_old_1.jpg" data-swiper-parallax="-200" data-swiper-parallax-duration="500">
+                    <p>Історія відкриття вищого навчального закладу на Закарпатті вельми цікава. Перебуваючи в складі різних держав (Угорщина, Австрійська імперія, Австро-Угорщина, Чехословаччина), спроб організації вищої освіти було чимало. Вперше про це було відкрито заявлено  на І-му слов’янському з’їзді  в Празі 7 червня 1848, на якому були задекларовані наміри створити спочатку богословські, вчительські семінарії, а згодом і вищі інститути-гімназії, ліцеї, університет.  На жаль, ці вимоги не були задоволені, тому 13 жовтня того ж 1848 року група закарпатських культурних діячів на чолі з А. Добрянським звернулися до австрійського імператора з проханням надати дозвіл на відкриття вищого навчального закладу в м. Ужгороді. Ці заяви спіткала та ж доля, що і попередні.</p>
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide2" data-swiper-parallax="-100">
+                <div class="gradient"></div>
+                <div class="slide_content">
+                    <p>Не покидала надія закарпатців щодо вирішення цього питання, а навпаки, ентузіазму побільшало після входження краю до складу Чехословаччини. Вже 24 грудня 1919 року у рішенні автономної директорії Підкарпатської Русі було зафіксовано про необхідність заснування в Ужгороді «руського університету», на якому мали б діяти 3 факультети: філософський, правничий та теологічний. Це рішення було надіслане в Прагу в Інститут педагогіки ім.. Я.А. Коменського, однак через «економічні» труднощі та «відсутність кваліфікованих кадрів» у їх проханні було відмовлено. Це питання продовжувало підніматися і у 1926 і у 1927-х рр.</p>
+                    <p>Отримавши автономію у 1938, а пізніше і 1939 рр. було розроблено «Проект» щодо організації університету в Карпатській Україні, згідно якого університет складатиметься з 4-ьох факультетів – філософічного (гуманітарний і природничий відділи), правничого (16 кафедр), господарчого (3 відділи) та медичного, а також цілий ряд кафедр, таких як: загального мовознавства, української мови та літератури, слов’янської археології, психології, соціології, музикології, історії України, історії церкви та інші. Надалі була зроблена спроба затвердити цей «Проект»  на законодавчому рівні. Таким чином, 24 лютого 1939 року Августином Волошином було написано текст «Закону про заснування Українського Державного Університету в Хусті». Однак стрімкий розвиток політичних перепитій не дав змогу втілити цей «Проект» в життя.</p>
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide3" data-swiper-parallax="-100">
+                <div class="gradient"></div>
+                <div class="slide_timeline">
+                    <h1>Історія УжНУ у деталях</h1>
+                    <div id='timeline-embed' style="width: 100%; height: 100%"></div>
+                    <!--<iframe src='//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1re_TdW2wuviv0wNrNGfBPGilwDl0VKwILwS4XQajars&font=Default&lang=uk&initial_zoom=2' width='100%' height='100%' frameborder='0'></iframe>-->
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide4" data-swiper-parallax="-100">
+                <div class="gradient"></div>
+                <div class="slide_content">
+                    <h1>УжНУ сьогодні</h1>
+                    <img class='framed u-pull-right' src="http://www.uzhnu.edu.ua/uploads/news/20150911_1877_Smolanka1.jpg" data-swiper-parallax="-200" data-swiper-parallax-duration="500">
+                    <p>Ужгородський національний університет належить до класичних університетів України і має найвищий – IV-й рівень акредитації. УжНУ – один з найбільших та кращих університетів Карпатського регіону. Знаходиться він на схилах Карпат, в чудовому  студентському місті Ужгород, найзахіднішому обласному центрі України. Університет молодий, заснований в 1945 році, але за невеликий проміжок часу гідно  показав себе в науковому світі, став орієнтиром, альма-матер для багатьох поколінь студентів, які тепер успішно працюють як в Україні, так і в інших країнах світу. В УжНУ сформувалися потужні наукові школи, відомі далеко за межами нашої країни, ведеться  наукова співпраця з багатьма провідними університетами світу.</p>
+                    <p><i>ПРИКІНЦЕВИЙ ТЕКСТ...</i></p>
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide5" data-swiper-parallax="-100">
+                <div class="gradient"></div>
+                <div class="slide_content">
+                    <img src="images/favicon/apple-touch-icon-114x114.png" class="u-pull-left" style="padding-right: 1rem">
+                    <h1>Дякуємо і запрошуємо до нас!</h1>
+                    <br/>
+                    <h2>Наші контакти</h2>
+                    <p>Ректорат ДВНЗ "Ужгородський національний університет" (УжНУ)<br/>
+                    Адреса: 88000, Україна, Закарпатська обл., м. Ужгород, пл. Народна, 3<br/>
+                    Телефон: +38 (03122) 3-33-41 Факс: +38 (03122) 3-42-02<br/>
+                    E-mail: official@uzhnu.edu.ua<br/>
+                        <a href="http://www.uzhnu.edu.ua" target="_blank">www.uzhnu.edu.ua</a></p>
+
+                    <br/>
+
+                    <div class="credits">Розробка: <a href="http://www.uzhnu.edu.ua/uk/cat/science-it" target="_blank">Центр інформаційних технологій ДВНЗ "УжНУ"</a> \\ Дубів О. (с) 2015</div>
+
+
+                </div>
+            </div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <!--<div class="swiper-pagination"></div>-->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!--<div class="swiper-scrollbar"></div>-->
+    </div>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            //initialize swiper when document ready
+            var mySwiper = new Swiper ('.swiper-container', {
+                // Optional parameters
+                direction: 'vertical',
+                loop: false,
+                // If we need pagination
+//                pagination: '.swiper-pagination',
+                paginationClickable: true,
+
+                // Navigation arrows
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                mousewheelControl: true,
+                keyboardControl: true,
+                //enable hash navigation
+                hashnav: true,
+                parallax: true,
+
+                // And if we need scrollbar
+//                scrollbar: '.swiper-scrollbar',
+            });
+            $currentSlide=mySwiper.activeIndex+1;
+            if ($currentSlide<4) {$("#bg1").fadeIn(3000);}
+            else $("#bg2").fadeIn(3000);
+            mySwiper.on('slideChangeStart', function () {
+                $currentSlide=mySwiper.activeIndex+1;
+                if ($currentSlide<4) {$("#bg2").fadeOut('slow',function () {$("#bg1").fadeIn('slow');});}
+                else {$("#bg1").fadeOut('slow',function () {$("#bg2").fadeIn('slow');});}
+
+            });
+        });
+    </script>
+
+
+    <style>
+        .tl-timeline {
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+        .tl-slide-content .tl-headline {
+            color: white;
+        }
+        .tl-slide-content h2.tl-headline {
+            font-size: 2rem;
+            margin: 1rem 0rem;
+            line-height: 2rem;
+            text-shadow: 1px 1px 1px #000!important;
+        }
+        .tl-text p {
+            color: white;
+            font-size: 1.2rem;
+        }
+        .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
+            font-size: 0.9rem;
+            line-height: 0.9rem;
+        }
+    </style>
+    <script type="text/javascript">
+        // The TL.Timeline constructor takes two arguments:
+        // the id of the Timeline container (no '#'), and
+        // the URL to your JSON data file or Google spreadsheet.
+        // the id must refer to an element "above" this code,
+        // and the element must have CSS styling to give it width and height
+        var additionalOptions = {
+            start_at_end: true,
+            default_bg_color: {r:70, g:70, b:70},
+            timenav_height: 250
+        };
+        timeline = new TL.Timeline('timeline-embed',
+              'https://docs.google.com/spreadsheets/d/1re_TdW2wuviv0wNrNGfBPGilwDl0VKwILwS4XQajars/pubhtml', additionalOptions);
+    </script>
+
+    <script
+
 </body>
 </html>
